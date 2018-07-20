@@ -13,20 +13,24 @@
       </div>
       <div class="options">
 12313123123
-        1312
-        3123
-        1231
+{{users}}
       </div>
     </div>
   </div>
 </template>
 
 <script>
-  import Header from '../components/Header.vue'
+  import Header from '../components/Header.vue';
   export default {
     name: "Pricing",
     components:{
       Header
+    },
+    async asyncData({store}){
+       await store.dispatch('getUsers');
+      return{
+        users: store.getters.users
+      }
     }
   }
 </script>
