@@ -38,7 +38,7 @@ module.exports = {
 
   css: [
     // CSS-файл в проекте
-    '~assets/css/main.css'
+    '~static/css/main.css'
   ]
 }
 

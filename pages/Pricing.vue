@@ -56,6 +56,6 @@
   }
 
   .options{
-    background: url(../assets/img/main-3.png) no-repeat;
+    background: url(../static/img/main-3.png) no-repeat;
   }
 </style>
