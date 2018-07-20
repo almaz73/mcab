@@ -1,0 +1,22 @@
+@font-face {
+  font-family: futura;
+  src: url(../font/Futura-Medium.ttf);
+}
+
+@font-face {
+  font-family: Helvetica;
+  src: url(../font/HelveticaNeueCyr-Roman.ttf);
+}
+
+body {
+  overflow-x: hidden;
+  min-width: 540px;
+  background-color: #383838;
+  font-family: futura;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #808080
+}
