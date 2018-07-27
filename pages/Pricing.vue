@@ -12,9 +12,9 @@
           will make it even faster.</p>
       </div>
       <div class="options">
-        <div class="col-xl-4" v-for="e in programm.data" :key="e.index">
-          {{e}}
-        </div>
+        <!--<div class="col-xl-4" v-for="e in programm.data" :key="e.index">-->
+          <!--{{e}}-->
+        <!--</div>-->
 
         <!--<div class="col-xl-4" v-for="e in programm" :key="e.index">-->
           <!--<div class="program-element-header">-->
@@ -48,6 +48,8 @@
         <!--</div>-->
       </div>
     </div>
+        {{users}}
+    <nuxt-link to="/">index</nuxt-link>
   </div>
 </template>
 
@@ -60,10 +62,10 @@
     },
     async asyncData({store}) {
       await store.dispatch('getUsers');
-      await store.dispatch('getProgramm');
+      //await store.dispatch('getProgramm');
       return {
         users: store.getters.users,
-        programm: store.getters.programm
+        //programm: store.getters.programm
       }
     }
   }

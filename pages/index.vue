@@ -9,7 +9,7 @@
         Nuxt.js project
       </h2>
       <div class="links">
-        <a href="/pricing">ПРАЙЙС</a>
+        <nuxt-link to="pricing">ПРАЙС</nuxt-link>
       </div>
     </div>
   </section>
@@ -17,10 +17,14 @@
 
 <script>
 import AppLogo from '~/components/AppLogo.vue'
+import Pricing from '~/pages/Pricing.vue'
+import NuxtLoading from "../.nuxt/components/nuxt-loading";
 
 export default {
   components: {
-    AppLogo
+    NuxtLoading,
+    AppLogo,
+    Pricing
   }
 }
 </script>
